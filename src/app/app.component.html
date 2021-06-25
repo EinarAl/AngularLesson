@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+
+<p>Name: {{myName}}</p>
+<p>Age: {{myAge}}</p>
+<p>My favorite song: {{textToChange}}</p>
+
+<input [(ngModel)] = "textToChange" />
+<ul>
+  <li *ngFor = "let hobby of hobbyArray">{{hobby}}</li>
+</ul>
+<router-outlet>
+
+</router-outlet>
